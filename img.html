@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="p1" onclick="demo()" src="./assets/images/car.jpeg" alt="">
+    <button onclick="rajini()">rajini</button>
+
+
+    <script>
+         let image=document.getElementById("p1");
+         function demo(){
+          image.style.height="30px"
+         }
+         function rajini(){
+            image.setAttribute("src", "assets/images/boat.jpeg");
+
+         }
+
+
+    </script>
+</body>
+</html>

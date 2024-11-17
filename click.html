@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="p1" onclick="demo()">hello</h1>
+    <button onclick="rajini()">rajini</button>
+    <button onclick="allu()">allu</button>
+
+    <script>
+      let h1 = document.getElementById("p1");
+      function demo() {
+        h1.style.color = "blue";
+       
+      }
+
+      function rajini(){
+        h1.innerHTML="rajini"
+        h1.setAttribute("src", "assets/images/boat.jpeg");
+      }
+
+      function allu(){
+        h1.innerHTML="allu arjun"
+      }
+    </script>
+  </body>
+</html>
