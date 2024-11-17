@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <img id="p1" onclick="demo()" src="./assets/images/car.jpeg" alt="">
+  </head>
+  <body>
+    <img
+      id="p1"
+      onclick="demo()"
+      src="./assets/images/car.jpeg"
+      height="150px"
+      width="200px"
+    />
     <button onclick="rajini()">rajini</button>
-
+    <button onclick="wknd()">weeknd</button>
+    <button onclick="spy()">spiderman</button>
 
     <script>
-         let image=document.getElementById("p1");
-         function demo(){
-          image.style.height="30px"
-         }
-         function rajini(){
-            image.setAttribute("src", "assets/images/boat.jpeg");
-
-         }
-
-
+      let image = document.getElementById("p1");
+      image.style.border = "2px solid black";
+      image.style.padding = "30px";
+      image.style.backgroundColor = "grey";
+      //  function demo(){
+      //   image.style.height="30px"
+      //  }
+      function rajini() {
+        image.setAttribute("src", "assets/images/rajini.jpg");
+        image.style.height = "150px";
+      }
+      function wknd() {
+        image.setAttribute("src", "assets/images/p1.JPEG");
+       
+      }
+      function spy(){
+        image.setAttribute("src","assets/images/spider1.jpg");
+       
+      }
     </script>
-</body>
+  </body>
 </html>
