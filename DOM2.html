@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
+  <body>
+    <script>
+      let div1 = document.createElement("div");
+      div1.style.border = "2px solid black";
+      div1.style.height = "50vh";
+      div1.style.width = "50vw";
+      div1.innerHTML = "hello";
+      document.body.appendChild(div1);
 
-<div id="main">
-<img id="img">
-<p id="p1"></p>
-<p id="p2"></p>
-<p id="p3"></p>
-</div>
 
-<body>
-   <script>
+      let image = document.createElement("img");
+      image.setAttribute("src", "assets/images/boat.jpeg");
+      image.style.height = "20vh";
+      image.style.width = "30vw";
+      div1.appendChild(image);
 
-  let main=document.getElementById("main")  
-  main.style.backgroundColor="lightgreen"
-  main.style.width="200px"
-  main.style.padding="50px"
 
- 
-  let img1=document.getElementById("img");
-  img1.setAttribute("height","100px")
-  img1.setAttribute("src","./assets/images/boat.jpeg")
-//   img1.style.borderRadius="100%"
+      let name=document.createElement("h1");
+      name.innerHTML="venkat";
+      div1.append(name,"hiiiii")
 
-  let name =document.getElementById("p1");
-  name.innerHTML="name:venkat"
-  let roll=document.getElementById("p2")
-  roll.innerHTML="3245678976"
+      let div2=document.createElement("div");
+      div2.style.border = "2px solid black";
+      div2.style.height = "50vh";
+      div2.style.width = "50vw";
+      div2.innerHTML = "hello";
+      document.body.appendChild(div2);
 
-   </script>
-    
-</body>
+      let image2 = document.createElement("img");
+      image2.setAttribute("src", "assets/images/boat.jpeg");
+      image2.style.height = "20vh";
+      image2.style.width = "30vw";
+      div2.appendChild(image2);
+
+
+      let main=document.createElement("div");
+      main.appendChild(div1);
+      main.appendChild(div2);
+      document.body.appendChild(main);
+      main.style.display="flex"
+
+
+    </script>
+  </body>
 </html>

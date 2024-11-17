@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div id="main">
+<img id="img">
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+</div>
+
+<body>
+   <script>
+
+  let main=document.getElementById("main")  
+  main.style.backgroundColor="lightgreen"
+  main.style.width="200px"
+  main.style.padding="50px"
+  main.style.border="2px,solid,black"
+
+ 
+  let img1=document.getElementById("img");
+  img1.setAttribute("height","100px")
+  img1.setAttribute("src","./assets/images/boat.jpeg")
+//   img1.style.borderRadius="100%"
+
+  let name =document.getElementById("p1");
+  name.innerHTML="name:venkat"
+  let roll=document.getElementById("p2")
+  roll.innerHTML="3245678976"
+
+   </script>
+    
+</body>
+</html>
