@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="frm1" onsubmit="submission(event)">
+      <input type="text" id="ip1" />
+      <input type="submit" value="submit" />
+    </form>
+    <p id="para"></p>
+    <script>
+      let form = document.getElementById("frm1");
+      let ip1 = document.getElementById("ip1");
+      let para = document.getElementById("para");
+
+      function submission(e) {
+        e.preventDefault();
+        para.innerHTML = ip1.value;
+      }
+    </script>
+  </body>
+</html>
