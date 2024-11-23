@@ -26,35 +26,67 @@
 // let fin=opp.map((x)=>x.name)
 // console.log(fin);
 
-
 const products = [
-  { id: 101, name: "Smartphone", price: 699.99, category: "Electronics", inStock: true, ratings: 4.5 },
-  { id: 102, name: "Laptop", price: 1199.99, category: "Computers", inStock: false, ratings: 4.7 },
-  { id: 103, name: "Wireless Headphones", price: 199.99, category: "Accessories", inStock: true, ratings: 4.3 },
-  { id: 104, name: "Smartwatch", price: 149.99, category: "Wearables", inStock: true, ratings: 4.2 },
-  { id: 105, name: "Gaming Console", price: 499.99, category: "Gaming", inStock: true, ratings: 4.8 }
+  {
+    id: 101,
+    name: "Smartphone",
+    price: 699.99,
+    category: "Electronics",
+    inStock: true,
+    ratings: 4.5,
+  },
+  {
+    id: 102,
+    name: "Laptop",
+    price: 1199.99,
+    category: "Computers",
+    inStock: false,
+    ratings: 4.7,
+  },
+  {
+    id: 103,
+    name: "Wireless Headphones",
+    price: 199.99,
+    category: "Accessories",
+    inStock: true,
+    ratings: 4.3,
+  },
+  {
+    id: 104,
+    name: "Smartwatch",
+    price: 149.99,
+    category: "Wearables",
+    inStock: true,
+    ratings: 4.2,
+  },
+  {
+    id: 105,
+    name: "Gaming Console",
+    price: 499.99,
+    category: "Gaming",
+    inStock: true,
+    ratings: 4.8,
+  },
 ];
-
-
 
 // let x1=products.map((a)=>a.name.toUpperCase());
 // console.log(x1);
 
-
 // let x2=products.map((b)=>`product name ${b.name} and price ${b.price}`);
 // console.log(x2);
-
 
 // let x3=products.filter((c)=>c.inStock).map((x)=>x.name)
 // console.log(x3);
 
-// let x4=products.filter((d)=>d.ratings>4.5).map((x)=>x.name)
-// console.log(x4);
-
+// let x4=products.find((d)=>d.ratings>4.5)
+// let x5=x4.name
+// console.log(x5);
 
 // let x4=products.every((f)=>f.inStock)
 // console.log(x4);
 
-
 // let x5=products.some((g)=>g.price<200)
 // console.log(x5);
+
+let a = products.findIndex((x) => x.category === "gaming");
+console.log(a)

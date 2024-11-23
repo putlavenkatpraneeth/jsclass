@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form1" onsubmit="evaluation(event)">
+      <input type="text" id="ip1" /><br />
+      <input type="button" id="btn" value="7" onclick="input(event) " />
+      <input type="button" id="btn1" value="8" onclick="input(event)" />
+      <input type="button" id="btn2" value="9" onclick="input(event)" />
+      <input type="button" id="btn+" value="+" onclick="input(event)" /><br />
+      <input type="button" id="btn3" value="4" onclick="input(event)" />
+      <input type="button" id="btn4" value="5" onclick="input(event)" />
+      <input type="button" id="btn5" value="6" onclick="input(event)" />
+      <input type="button" id="btn-" value="-" onclick="input(event)" /> <br />
+      <input type="button" id="btn6" value="1" onclick="input(event)" />
+      <input type="button" id="btn7" value="2" onclick="input(event)" />
+      <input type="button" id="btn8" value="3" onclick="input(event)" />
+      <input type="button" id="btn*" value="*" onclick="input(event)" /><br />
+      <input type="button" id="c" value="c" onclick="input(event)" />
+      <input type="button" id="btn0" value="0" onclick="input(event)" />
+      <input type="submit" id="=" value="=" />
+      <input type="button" id="btn/" value="/" onclick="input(event)" />
+    </form>
+    <p id="op"></p>
+
+    <script>
+      let form1 = document.getElementById("form1");
+      let op = document.getElementById("op");
+      let display = document.getElementById("ip1");
+      let btn = document.getElementById("btn");
+      let btn1 = document.getElementById("btn1");
+      let btn2 = document.getElementById("btn2");
+      let btn3 = document.getElementById("btn3");
+      let btn4 = document.getElementById("btn4");
+      let btn5 = document.getElementById("btn5");
+      let btn6 = document.getElementById("btn6");
+      let btn7 = document.getElementById("btn7");
+      let btn8 = document.getElementById("btn8");
+      let add = document.getElementById("btn+");
+      let sub = document.getElementById("btn-");
+      let mul = document.getElementById("btn*");
+      let c = document.getElementById("c");
+      let zero = document.getElementById("btn0");
+      let equal = document.getElementById("=");
+      let div = document.getElementById("btn/");
+
+      btn.style.height = "50px";
+      btn.style.width = "50px";
+
+      btn1.style.height = "50px";
+      btn1.style.width = "50px";
+
+      btn2.style.height = "50px";
+      btn2.style.width = "50px";
+
+      btn3.style.height = "50px";
+      btn3.style.width = "50px";
+
+      btn4.style.height = "50px";
+      btn4.style.width = "50px";
+
+      btn5.style.height = "50px";
+      btn5.style.width = "50px";
+
+      btn6.style.height = "50px";
+      btn6.style.width = "50px";
+
+      btn7.style.height = "50px";
+      btn7.style.width = "50px";
+
+      btn8.style.height = "50px";
+      btn8.style.width = "50px";
+
+      add.style.height = "50px";
+      add.style.width = "50px";
+      add.style.backgroundColor = "black";
+      add.style.color = "white";
+
+      sub.style.height = "50px";
+      sub.style.width = "50px";
+      sub.style.backgroundColor = "black";
+      sub.style.color = "white";
+
+      mul.style.height = "50px";
+      mul.style.width = "50px";
+      mul.style.backgroundColor = "black";
+      mul.style.color = "white";
+
+      c.style.height = "50px";
+      c.style.width = "50px";
+
+      zero.style.height = "50px";
+      zero.style.width = "50px";
+
+      equal.style.height = "50px";
+      equal.style.width = "50px";
+      equal.style.backgroundColor = "black";
+      equal.style.color = "white";
+
+      div.style.height = "50px";
+      div.style.width = "50px";
+      div.style.backgroundColor = "black";
+      div.style.color = "white";
+
+      display.style.width = "205px";
+
+      // btn1.style.height="9vh"
+      // btn1.style.width="7vw"
+
+      // btn2.style.height="7vh"
+      // btn2.style.width="7vw"
+
+      // btn3.style.height="7vh"
+      // btn3.style.width="7vw"
+
+      display.style.height = "7vh";
+
+      function input(event) {
+        display.value += event.target.value;
+      }
+
+      function evaluation(event) {
+        event.preventDefault();
+        let result = eval(display.value);
+        display.value = result;
+      }
+    </script>
+  </body>
+</html>
